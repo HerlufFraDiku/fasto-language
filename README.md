@@ -1,2 +1,2 @@
 # Fasto-language
-Adds support for the fasto language.
+Adds syntax highlighting of fasto in Atom. Enjoy :+1:

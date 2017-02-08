@@ -1,0 +1,16 @@
+{
+  "name": "fasto-language",
+  "version": "0.0.0",
+  "description": "Language support for fasto",
+  "keywords": [
+    "fasto",
+    "fasto-lang",
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/language-fasto",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

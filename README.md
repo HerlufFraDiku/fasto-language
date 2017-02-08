@@ -1,3 +1,2 @@
-# PackageName language package
-
-A short description of your language package.
+# Fasto-language
+Adds support for the fasto language.

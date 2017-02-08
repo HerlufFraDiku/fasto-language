@@ -8,7 +8,7 @@
     "language",
     "grammar"
   ],
-  "repository": "https://github.com/atom/language-fasto",
+  "repository": "https://github.com/HerlufFraDiku/fasto-language.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

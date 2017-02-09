@@ -2,9 +2,54 @@
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
 
 '.source.fasto':
-  'let-in':
+  'let-in statement':
     'prefix': 'let'
-    'body': 'let ${1:x} = ${2:exp} in ${3:exp}'
-  'function':
+    'body': 'let ${1:x} = ${2:exp} in ${3:exp}$4'
+  'function declaration':
     'prefix': 'fun'
-    'body': 'fun int ${1:foo} (int ${2:arg}) ='
+    'body': 'fun int ${1:foo} (int ${2:arg}) = $3'
+  'lambda function':
+    'prefix': 'fn'
+    'body': 'fn int (int ${1:x}) => ${2:x}$3'
+    'description': 'Lambda function declaration'
+  'write':
+    'prefix': 'write'
+    'body': 'write(${1:val})$2'
+    'description': 'write val to stdout'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'read':
+    'prefix': 'read'
+    'body': 'read(${1:type})$2'
+    'description': 'read val of type from stdout'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'map':
+    'prefix': 'map'
+    'body': 'map(${1:foo}, ${2:list})$3'
+    'description': 'map function (foo) onto list elements'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'reduce':
+    'prefix': 'reduce'
+    'body': 'reduce(${1:foo}, ${2:nel}, ${3:list})$4'
+    'description': 'reduce list using function and neutral element'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'iota':
+    'prefix': 'iota'
+    'body': 'iota(${1:n})$2'
+    'description': 'create list [0, 1, ... , n-1]'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'replicate':
+    'prefix': 'replicate'
+    'body': 'replicate(${1:n}, ${2:val})$3'
+    'description': 'create list containing n times val'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
+  'scan':
+    'prefix': 'scan'
+    'body': 'scan(${1:foo}, ${2:nel}, ${3:list})$4'
+    'leftLabelHTML':'<span style="color:#bbbbbb">fn </span>'
+    'rightLabelHTML': ''
